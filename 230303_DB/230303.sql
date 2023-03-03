@@ -188,6 +188,7 @@ RIGHT OUTER JOIN BBS b
 ON (M.ID = B.WRITER)
 
 --조별활동 조인
+-- 뒷 테이블이 기준이고 출력은 앞 테이블이 먼저 나옴. 뒷 테이블에서 하나의 row를 앞 테이블과 모두 합치고, 그 다음 row를 앞 테이블과 모두 합치기
 --1
 SELECT *
 FROM PRODUCT p, COMPANY c
